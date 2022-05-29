@@ -1,0 +1,28 @@
+@import "./variables";
+
+.section-title {
+  margin: 40px auto;
+  max-width: $maxWidth;
+  
+  h2 {
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: uppercase;
+    
+    @include desktop() {
+      font-size: 40px;
+    }
+  }
+
+  @include mobilePadding();
+
+  @include desktop() {
+    margin: 60px auto 40px;
+  }
+
+  span {
+    display: block;
+    font-size: 16px;
+    padding-top: 15px;
+  }
+}

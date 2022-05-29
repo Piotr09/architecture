@@ -1,0 +1,52 @@
+@import "./variables";
+
+.about {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 auto 40px;
+  max-width: $maxWidth;
+
+  div:nth-of-type(1) {
+    background-color: $mainGrey;
+  }
+  div:nth-of-type(2) {
+    background-color: $mainOrange;
+  }
+  div:nth-of-type(3) {
+    background-color: $mainBeige;
+  }
+  
+  @include mobilePadding();
+
+  @include desktop() {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
+  }
+
+  &__card {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    
+    h3 {
+      font-size: 24px;
+      padding: 20px 0;
+    }
+
+    .far, .fas, .fab {
+      align-items: center;
+      border-radius: 50%;
+      border: 2px solid;
+      color: white;
+      display: flex;
+      font-size: 60px;
+      height: 100px;
+      justify-content: center;
+      width: 100px;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import "./variables";
+
+.carousel {
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  
+  &__background {
+    animation: carousel-animation 5s linear infinite;
+    height: 65vh;
+    object-fit: cover;
+    width: 100%;
+    
+    @include desktop() {
+      height: 80vh;
+    }
+  }
+
+  &__person{
+  animation: architect-animation 5s linear infinite;
+  bottom: 0;
+  left: 10%;
+  position: absolute;
+  width: 90vw;
+  
+  @include tablet() {
+    width: 60vw;
+  }
+
+  @include desktop() {
+    width: 40vw;
+  }
+}
+
+  &__name {
+    animation: name-animation 5s linear infinite;
+    background-color: white;
+    bottom: 75%;
+    font-size: 30px;
+    font-weight: 700;
+    height: fit-content;
+    padding: 15px 30px 0;
+    position: absolute;
+    right: 8%;
+    
+    @include desktop() {
+      bottom: 10%;
+      font-size: 60px;
+      right: 15%;
+    }
+  }
+}
+
+@keyframes carousel-animation {
+  
+  0% {
+    opacity: 0;
+    transform: scale(1.10) translate(1%, 1%);
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.10) translate(-4%, -4%);
+  }
+}
+
+
+@keyframes architect-animation {
+  
+  0% {
+    opacity: 0;
+    transform: translateX(-5%);
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+@keyframes name-animation {
+  
+  0% {
+    opacity: 0;
+    transform: translateX(5%);
+  }
+
+  8% {
+    opacity: 0;
+  }
+
+  13% {
+    opacity: 1;
+  }
+
+  87% {
+    opacity: 1;
+  }
+
+  92% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}

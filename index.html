@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;700&display=swap" rel="stylesheet">
+    <title>DESIGN - Twoi architekci</title>
+    <meta name="description" content="Design - Twoi architekci">
+    <script src="https://kit.fontawesome.com/8481b2cba1.js" crossorigin="anonymous"></script>
+    <link href="./css/index.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+</head>
+<body>
+<header class="header">
+    <div class="header__logo">
+        <a href="/"><img src="./images/logo.png" alt="logo"/></a>
+    </div>
+    <button class="header__burger" aria-label="Otwórz/zamknij menu">
+        <span class="fas fa-bars"></span>
+        <span class="fas fa-times hide"></span>
+    </button>
+    <nav class="header__nav hide-mobile-nav">
+        <ul>
+            <li><a href="#intro">Dlaczego my?</a></li>
+            <li><a href="#about">Obszary działań</a></li>
+            <li><a href="#distinction">Co nas wyróżnia?</a></li>
+            <li><a href="#realisations">Realizacje</a></li>
+            <li><a href="#reviews">Opinie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<section class='carousel'>
+    <img class='carousel__background' src='' alt=''></img>
+    <img class='carousel__person' src="" alt=""/>
+    <span class='carousel__name'></span>
+</section>
+<section class='hero' id="intro">
+    <div class="hero__description">
+        <h3>Działamy dla Ciebie!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+    </div>
+    <div class="hero__image">
+        <img src="./images/hero-image-1.jpg"/>
+     </div>
+</section>
+<section class="section-title" id='about'>
+    <h2>Obszary działań:</h2>
+</section>
+<section class='about'>
+    <div class="about__card">
+        <i class="far fa-lightbulb"></i>        
+        <h3>Dekoracja wnętrz</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+    </div>
+    <div class="about__card">
+        <i class="fas fa-home"></i>
+        <h3>Plan budynku</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+    </div>
+    <div class="about__card">
+        <i class="fab fa-pagelines"></i>
+        <h3>Aranżacja ogrodu</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+    </div>
+</section>
+<section class='hero' id='distinction'>
+    <div class="hero__image">
+        <img src="./images/hero-image-2.jpg"/>
+     </div>
+    <div class="hero__description">
+        <h3>To nas wyróżnia!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+    </div>
+</section>
+<section class="section-title" id='realisations'>
+    <h2>Nasze realizacje:</h2>
+</section>
+<section class="gallery">
+    <div class="swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+</section>
+<section class="section-title" id='reviews'>
+    <h2>Opinie naszych klientów:</h2>
+</section>
+<section class='reviews'>
+    <div class="reviews__card">
+        <img src="./images/review-1.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+        <h3>Ania, Warszawa</h3>
+    </div>
+    <div class="reviews__card">
+        <img src="./images/review-2.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+        <h3>Kasia, Kraków</h3>
+    </div>
+    <div class="reviews__card">
+        <img src="./images/review-3.jpg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+        <h3>Karol, Poznań</h3>
+    </div>
+</section>
+<section class='hero' id="contact">
+    <div class="hero__description">
+        <h3>Przekonaj się sam!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit architecto praesentium distinctio iure sapiente soluta consequatur, debitis fugit magnam adipisci minus, tenetur eligendi. Pariatur maxime ipsum laborum hic itaque vero.</p>
+    </div>
+    <div class="hero__image">
+        <img src="./images/hero-image-3.jpg"/>
+     </div>
+</section>
+</div>
+<footer class="footer">
+    <div class="footer__logo">
+        <img src="./images/logo.png" alt="logo" width="130px"/>
+    </div>
+    <div class="footer__copyright">
+        <span>Design & code by Piotr Pałasz. All rights reserved.</span>
+    </div>
+    <div class="footer__menu">
+        <ul>
+            <li><a href="#intro">Dlaczego my?</a></li>
+            <li><a href="#distinction">Co nas wyrónżnia?</a></li>
+            <li><a href="#reviews">Opinie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="./js/swiper.js"></script>
+<script src="./const/carousel.const.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

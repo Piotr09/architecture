@@ -1,0 +1,24 @@
+@mixin tablet {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 991px) {
+    @content;
+  }
+}
+
+@mixin mobilePadding {
+  padding: 0 16px;
+
+  @include desktop() {
+    padding: 0;
+  }
+}
+
+$mainGrey: #373A36;
+$mainOrange: #D48166;
+$mainBeige: #cbb79f;
+$lightGrey: #E6E2DD;
+$maxWidth: 1172px;

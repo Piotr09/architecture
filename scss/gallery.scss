@@ -1,0 +1,50 @@
+@import "./variables";
+
+.gallery {
+  margin: 0 auto;
+  max-width: $maxWidth;
+  
+  @include mobilePadding();
+
+  img {
+    height: 330px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.swiper {
+  max-width: $maxWidth;
+  width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  min-height: 55px;
+  min-width: 55px;
+  position: relative;
+  
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    align-items: center;
+    background-color: white;
+    color: $mainGrey;
+    content: "\f061";
+    display: flex;
+    font-family: "Font Awesome 5 Free";
+    font-size: 30px;
+    font-weight: 900;
+    height: 55px;
+    justify-content: center;
+    padding: 0 15px;
+    transform: translateX(10px);
+    width: 55px;
+  }
+}
+
+.swiper-button-prev::before {
+  transform: rotate(180deg) translateX(10px);
+}
